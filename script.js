@@ -189,7 +189,11 @@ function createParticles() {
         particlesContainer.appendChild(particle);
     }
 }
+const cardSelectors = '.understanding-card, .app-card, .global-card, .topic-card, .challenge-card, .prediction-item, .long-term-card, .solution-item';
 
+document.querySelectorAll(cardSelectors).forEach(card => {
+    card.classList.add('glass-effect');
+});
 // Create Twinkling Stars
 function createStars() {
     const heroSection = document.querySelector('.hero-section');

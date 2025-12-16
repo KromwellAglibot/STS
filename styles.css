@@ -1399,6 +1399,7 @@ button { cursor: pointer; }
 }
 
 /* Glowing Borders */
+/* Glowing Borders */
 @keyframes glowBorder {
     0%, 100% {
         box-shadow: 0 0 5px var(--accent-cyan),
@@ -1412,9 +1413,15 @@ button { cursor: pointer; }
     }
 }
 
+/* UPDATED LIST: Added topic-card, challenge-card, prediction-item, long-term-card, and solution-item */
 .understanding-card:hover,
 .app-card:hover,
-.global-card:hover {
+.global-card:hover,
+.topic-card:hover,
+.challenge-card:hover,
+.prediction-item:hover,
+.long-term-card:hover,
+.solution-item:hover {
     animation: glowBorder 2s ease-in-out infinite;
 }
 
@@ -1424,8 +1431,17 @@ button { cursor: pointer; }
     50% { transform: translateY(-10px); }
 }
 
+/* UPDATED LIST: Added global-card, topic-card, prediction-item, long-term-card, and solution-item */
 .understanding-card.visible,
 .app-card,
+.challenge-card,
+.global-card,
+.topic-card,
+.prediction-item,
+.long-term-card,
+.solution-item {
+    animation: floatCard 6s ease-in-out infinite;
+}
 .challenge-card {
     animation: floatCard 6s ease-in-out infinite;
 }
