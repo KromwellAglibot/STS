@@ -258,14 +258,16 @@ body {
     transition: width 0.3s ease;
 }
 .nav-links {
-        display: none; /* Hides the long list of links on mobile to save space */
-        /* Alternatively, you can style this to be a scrollable row or use a hamburger menu */
+        display: flex; /* show the nav links in the header */
+        gap: 2.5rem;
+        list-style: none;
+        align-items: center;
     }
 .nav-links a:hover {
     color: var(--accent-cyan);
 }
 .nav-container {
-        justify-content: center;
+        justify-content: space-between;
     }
 .nav-links a:hover::after {
     width: 100%;
